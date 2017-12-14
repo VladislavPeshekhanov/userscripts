@@ -10,7 +10,7 @@
 
 var ValidName = $("#queueName").text();
 
-function autoClick(answer) {
+function autoClicker(answer) {
     var radioButton = $(".col-md-1.custom_radio");
     var buttonNumber = 0;
     for (i = 0; i < settings.length | i < (radioButton.length / 2); i++) {
@@ -27,19 +27,19 @@ switch (ValidName) {
     //название очереди, где необходимо отвечать на вопросы по заданному алгоритму.
     case "Кредитные карты":
         //Y или N - как ответить на вопрос "Да" или "Нет"? Через запятую по порядку на 1-й, 2-й и т.д. вопросы
-        autoClick(["Y", "N", "Y", "Y", "Y", "Y", "N", "N"]);
+        autoClicker(["Y", "N", "Y", "Y", "Y", "Y", "N", "N"]);
         break;
     case "Выдача депозитов":
-        autoClick(["Y", "N", "Y", "Y", "N", "Y"]);
+        autoClicker(["Y", "N", "Y", "Y", "N", "Y"]);
         break;
     case "Рассрочка":
-        autoClick(["Y", "Y", "N", "Y", "Y", "N", "N", "Y"]);
+        autoClicker(["Y", "Y", "N", "Y", "Y", "N", "N", "Y"]);
         break;
     case "Фото клиента для доступа к столу":
-        autoClick(["Y", "Y", "Y", "Y", "Y", "N"]);
+        autoClicker(["Y", "Y", "Y", "Y", "Y", "N"]);
         break;
     case "Фото для идентификации":
-        autoClick(["Y", "N", "Y", "Y", "N"]);
+        autoClicker(["Y", "N", "Y", "Y", "N"]);
         break;
     case "Депозитный договор (Подпись на планшете)":
     case "Заявление Заемщика":
@@ -50,34 +50,34 @@ switch (ValidName) {
     case "Валидация справки ИНН":
     case "Валидация справки ИНН (OLD)":
     case "Военный билет (оффлайн)":
-        autoClick(["Y", "Y", "Y", "Y",]);
+        autoClicker(["Y", "Y", "Y", "Y",]);
         break;
     case "Валидация анкеты.":
-        autoClick(["Y", "Y", "Y", "Y",]);
+        autoClicker(["Y", "Y", "Y", "Y",]);
         var ctsRadio = $(".cts_radio");
         for (i = 0; i < ctsRadio.length; i = i + 2) {
             ctsRadio[i].click();
         }
         break;
     case "Электронная Анкета персональных данных клиента":
-        autoClick(["Y", "Y"]);
+        autoClicker(["Y", "Y"]);
         break;
     case "Заявление на расторжение договора (Подпись на планшете)":
-        autoClick(["Y"]);
+        autoClicker(["Y"]);
         break;
     case "Электронная копия паспорта (оф-лайн) Украина":
     case "Электронная копия паспорта (он-лайн) Украина":
     case "Паспорт Украины (онлайн)":
-        autoClick(["Y", "N", "Y", "Y", "Y", "Y", "Y", "Y", "Y"]);
+        autoClicker(["Y", "N", "Y", "Y", "Y", "Y", "Y", "Y", "Y"]);
         break;
     case "Валидация паспорта (Украина) (оффлайн)":
     case "Отложенные - Электронная копия паспорта (оф-лайн) Украина":
-        autoClick(["Y", "N", "Y", "Y", "Y", "Y", "Y"]);
+        autoClicker(["Y", "N", "Y", "Y", "Y", "Y", "Y"]);
         break;
     case "Валидация клиентских макетов карт":
-        autoClick(["Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y"]);
+        autoClicker(["Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y"]);
         break;
     default:
-        autoClick(["Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y"]);
+        autoClicker(["Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y"]);
         break;
 }
